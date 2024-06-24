@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.invoice-box {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.company-details {
+    text-align: left;
+}
+
+.invoice-details {
+    text-align: right;
+}
+
+.client-details {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+@media print {
+    @page {
+        size: A4 landscape; /* Esto establece la orientación horizontal */
+        margin: 10mm;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .invoice-box {
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+}

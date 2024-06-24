@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/factura.css') }}">
+</head>
+<body>
+    <div class="invoice-box">
+        <div class="header">
+            <div class="company-details">
+                <h2>Nombre de la Empresa</h2>
+                <p>RUC: 12345678-5</p>
+                <p>Dirección de la Empresa</p>
+                <p>Tel: (098) 123-4567</p>
+            </div>
+            <div class="invoice-details">
+                <h3>Factura</h3>
+                <p>Factura N°: 0001</p>
+                <p>Fecha: 24 de Junio de 2024</p>
+            </div>
+        </div>
+
+        <div class="client-details">
+            <p><strong>Cliente:</strong> Nombre del Cliente</p>
+            <p><strong>RUC:</strong> 98765432-1</p>
+            <p><strong>Dirección:</strong> Dirección del Cliente</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Cantidad</th>
+                    <th>Descripción</th>
+                    <th>Precio Unitario</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Producto o Servicio 1</td>
+                    <td>Gs. 100.000</td>
+                    <td>Gs. 100.000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Producto o Servicio 2</td>
+                    <td>Gs. 100.000</td>
+                    <td>Gs. 200.000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Subtotal</td>
+                    <td>Gs. 300.000</td>
+                </tr>
+                <tr>
+                    <td colspan="3">IVA 10%</td>
+                    <td>Gs. 30.000</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><strong>Total</strong></td>
+                    <td><strong>Gs. 330.000</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div class="footer">
+            <p><strong>Condiciones de pago:</strong> Contado</p>
+            <p><strong>Observaciones:</strong> Gracias por su compra.</p>
+        </div>
+    </div>
+</body>
+</html>
